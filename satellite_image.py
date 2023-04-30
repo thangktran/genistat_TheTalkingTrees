@@ -1,7 +1,5 @@
-# import googlemaps
 from datetime import datetime
 
-# gmaps = googlemaps.Client(key='AIzaSyCjwOPw2fW-jHN_oxQOeUZWOic0BllUxRc')
 import requests
 
 def get_satellite_image(api_key, latitude, longitude, zoom, width, height, format="jpg", save_as="satellite_image.jpg"):
@@ -20,7 +18,7 @@ def get_satellite_image(api_key, latitude, longitude, zoom, width, height, forma
     else:
         print("Error fetching satellite image:", response.status_code)
 
-api_key = "AIzaSyCjwOPw2fW-jHN_oxQOeUZWOic0BllUxRc"
+api_key = "XXX"
 lat1 = 53.0927021 # Lower left corner
 lng1 = 8.852523
 lat2 = 53.0928892 # Upper right corner
